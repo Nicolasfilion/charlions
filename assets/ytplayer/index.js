@@ -373,9 +373,9 @@ var EventEmitter = function () {
       else this._queueCommand('setPlaybackRate', rate)
     }
   
-    setPlaybackQuality (suggestedQuality) {
-      if (this._ready) this._player.setPlaybackQuality(suggestedQuality)
-      else this._queueCommand('setPlaybackQuality', suggestedQuality)
+    setPlaybackQuality (highres) {
+      if (this._ready) this._player.setPlaybackQuality(highres)
+      else this._queueCommand('setPlaybackQuality', highres)
     }
   
     getPlaybackRate () {
